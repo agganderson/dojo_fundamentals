@@ -1,0 +1,175 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="jQuery Assignment I" content="Assignment I:jQuery Functions"/>
+	<title>My jQuery Assignment</title>
+	<style>
+		span {
+			display: none;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			$('#hide').click(function(){
+				$('.clicking p').hide('slow');
+			});
+
+			$('#show').click(function(){
+				$('.clicking p').show('slow');
+			});
+
+
+			$('#add').click(function(){
+				$('#add').append('<p>New paragraph!!<p>');
+			});
+
+			$('#up').click(function(){
+				$('#slide p').slideUp();
+			});
+
+			$('#down').click(function(){
+				$('#slide p').slideDown();
+			});
+
+			$('#fade').click(function(){
+				$('#cat').fadeOut();
+			});
+
+			$('#fade button').click(function(){
+				$('#cat').fadeIn('slow');
+				return false;
+			});
+
+			$('#toggle button').click(function(){
+				$('#toggle ul').toggle('slow');
+			});
+
+			$('#hover li').hover(function(){
+				$(this).fadeOut();
+				$(this).fadeIn();
+			});
+
+			$('#slideToggle button').click(function(){
+				$('#slideToggle img').slideToggle();
+			});
+
+			$('input').on('blur', function(){
+				$(this).val(function(i, val){
+					return val.toUpperCase();
+				});
+			});
+
+			$('#after button').click(function(){
+				$('#after p').after('<p>Far suo ideale nostra chiuso. Pensieri piu ostinata dolcezza ora persiano uso. Sublimate ex se affluisce dissetato. Mai maggior com rispose passava obliare pensato ricordo.</p>');
+			});
+
+			$('#before button').click(function(){
+				$('#before p').before('<h1>now this I understand</h1>');
+			});
+
+			$('#html h2').click(function(){
+				$('#html h2').html('<p>you made this lowercase</p>');
+			});
+
+			$('#text h2').click(function(){
+				$('#text h2').text('this is new text.');
+			});
+
+			$('input').focus(function(){
+				$(this).next('span').css('display', 'inline').fadeOut();
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div id="container">
+		<div id="header">
+			<h2>jQuery Assignment</h2>
+		</div>
+
+		<div class="clicking">
+			<button id="hide">Hide</button>
+			<button id="show">Show</button>
+			<p>Click Hide and this will go away.</p>
+		</div>
+
+		<div id="add">
+			<p>Gotta click me to get another paragraph!</p>
+		</div>
+
+		<div id="slide">
+			<button id="up">Slide Up</button>
+			<button id="down">Slide Down</button>
+			<p>Ve montagne presenza no continuo da incendio dovevamo. Piramide el universo ma il chiamata turchese. Parla me vince gemma no pochi. Su nascondere sollevando pericolosa perpetuato da riflettere. Via continua prodigio trovarti non gia uno lasciato. Stoffe patito avesse noi dai stesso uno ape spalla mutare. Spesso limiti dianzi ah ed troppe. Acqua tuo tre copia mondo belle ben.</p>
+		</div>
+
+		<div id="fade">
+			<button>Cat</button>
+			<img id="cat" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5_JQWWrzVcyR35fFccjSNSb9ZdoP0jajI92QilZCRpxjK2xR3" alt="funny cat" width="200" height="250">
+		</div>
+
+		<div id="toggle">
+			<button>Menu</button>
+			<ul>
+				<li>Blah</li>
+				<li>Blah</li>
+				<li>Bloo</li>
+				<li>Blah</li>
+				<li>Blah</li>
+			</ul>
+		</div>
+
+		<div id="hover">
+			<ol>
+				<li>LOTR</li>
+				<li>Avengers</li>
+				<li>Eurotrip</li>
+				<li>The Man From Uncle</li>
+				<li>Ocean's Eleven</li>
+			</ol>
+		</div>
+
+		<div id="slideToggle">
+			<button>That Togglin</button>
+			<img src="http://www.makeusknow.com/images/funny-weird-dogs3.jpg" alt="dog" width="200" height="250">
+		</div>
+
+		<div id="val">
+			<p>Typppppeeeeeee then tab</p>
+			<input type="text" value="put something here">
+		</div>
+
+		<div id="after">
+			<button>Idk what this says.. but add more here</button>
+			<p>You're gonna click here to make this paragraph red.Osato molle ah torno ai si folle. Plasmare una mettermi promessa una universo mutevole cancello dov osi. Talvolta crudelta mi ai tu adorarti ex tutelare compatto. Difendo sul mio miniato pensato cerchia.</p>
+		</div>
+
+		<div id="before">
+			<button>add english before the italian</button>
+			<p>Osato molle ah torno ai si folle. Plasmare una mettermi promessa una universo mutevole cancello dov osi. Talvolta crudelta mi ai tu adorarti ex tutelare compatto. Difendo sul mio miniato pensato cerchia.</p>
+		</div>
+
+		<div id="html">
+			<h2>MAKE THIS LOWERCASE</h2>
+		</div>
+
+		<div id="text">
+			<h2>Now replace text click here.</h2>
+		</div>
+
+		<div id="focus">
+			<input type="text"><span>focus here</span>
+			<input type="password"><span>focus here</span>
+		</div>
+
+	</div>	
+
+</body>
+</html>

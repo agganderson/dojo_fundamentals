@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Add a User" content="jQuery Assignment:Adding a User with jQuery">
+	<title>Adding a User</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("form").submit(function(){
+				$("#table").append("<tr>" + 
+					"<td>" + $("#first_name").val() + "</td>" + 
+					"<td>" + $("#last_name").val() + "</td>" + 
+					"<td>" + $("#email").val() + "</td>" + 
+					"<td>" + $("#contact").val() + "</td>" + 
+					"</tr>")
+				$(".text_input").val("");
+				return false;
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+
+		<div id="table">
+			<table>
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email Address</th>
+						<th>Contact #</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<div id="addedinfo">
+			<table>
+				<tbody>
+					<tr>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="header">
+			<h1>Add User</h1>
+		</div>
+
+		<div id="userform">
+			<form>
+				<input class="text_input" id="first_name" type="text" placeholder="First Name" />
+				<input class="text_input" id="last_name" type="text" placeholder="Last Name" />
+				<input class="text_input" id="email" type="text" placeholder="Email" />
+				<input class="text_input" id="contact" type="text" placeholder="Contact Number" />
+				<input type="submit" value="Add User" />
+			</form>
+
+		</div>
+
+	</div>
+</body>
+</html>

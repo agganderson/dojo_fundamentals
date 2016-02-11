@@ -1,0 +1,174 @@
+* {
+	font-family: "Tahoma";
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	width: 970px;
+	margin: 0px auto;
+}
+
+header {
+	height: 100px;
+	background-color: white;
+}
+
+	header img, h1 {
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px;
+	}
+
+	header img {
+		margin-top: 10px;
+	}
+
+	header h1 {
+		margin-top: 30px;
+		margin-left: 150px;
+		font-size: 20px;
+	}
+
+#bottom_header {
+	background-color: lightgray;
+	padding: 10px;
+}
+
+	#bottom_header li {
+		list-style-type: none;
+		list-style: inline;
+		display: inline;
+		font-size: 12px;
+		margin-left: 20px;
+	}
+
+	#bottom_header li:after {
+		content: "|";
+		color: gray;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+#top_body {
+	background-color: black;
+	width: 970px;
+	height: 310px;
+}
+	
+#top_left_body, #top_right_body {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#top_left_body {
+	width: 300px;
+	height: 400px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+	#top_left_body img {
+		height: 280px;
+		width: 380px;
+		display: block;
+	}
+
+	#top_left_body h5 {
+		font-family: "Courier New", "Lucida Console", monospace;
+		font-size: 10.5px;
+		font-weight: lighter;
+		color: #90ee90;
+		margin-top: 2px;
+		width: 380px;
+		display: block;
+	}
+
+#top_right_body {
+	width: 500px;
+	height: 280px;
+	margin-left: 80px;
+	padding: 10px;
+}
+
+	#top_right_body h4 {
+		font-family: Arial, sans-serif;
+		background-color: orange;
+		color: black;
+		font-size: 12px;
+		display: inline-block;
+		vertical-align: top;
+		padding: 5px;
+		width: 540px;
+
+	}
+
+	#top_right_body h3 {
+		font-family: Arial, sans-serif;
+		background-color: gray;
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+		padding: 10px;
+		width: 530px;
+	}
+
+	#top_right_body p {
+		font-family: Arial, sans-serif;
+		background-color: gray;
+		color: white;
+		font-size: 13px;
+		display: inline-block;
+		padding: 10px;
+		height: 200px;
+		width: 530px;
+	}
+
+	#top_right_body span {
+		padding: 150px;
+	}
+
+#bottom_body {
+	height: 280px;
+	width: 950px;
+	background-color: black;
+	padding: 10px;
+}
+
+.services {
+	height: 270px;
+	width: 230px;
+	display: inline-block;
+	margin-left: 2px;
+}
+
+	.services h4 {
+		background-color: orange;
+		padding: 5px;
+		font-size: 13px;
+		font-weight: lighter;
+	}
+
+	.services img {
+		height: 80px;
+		width: 230px;
+	}
+
+	.services p {
+		background-color: white;
+		color: black;
+		font-size: 10px;
+		font-weight: lighter;
+		padding: 10px;
+		height: 100px;
+		margin-top: -5px;
+	}
+
+	.services a {
+		background-color: orange;
+		color: black;
+		border: 2px solid black;
+		padding: 5px;
+		margin-left: 140px;
+	}

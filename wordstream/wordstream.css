@@ -1,0 +1,289 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+#container {
+	width: 970px;
+	margin: 0px auto;
+}
+
+#rightheader {
+	background-color: white;
+	width: 970px;
+	height: 20px;
+	display: block;
+
+}
+	
+	#rightheader ul h4 {
+		display: block;
+	}
+
+	#rightheader ul {
+		width: 400px;
+		height: 20px;
+		font-size: 12px;
+		padding: 5px;
+		margin-left: 470px;
+		color: gray;
+		border: 2px solid gray;
+		border-radius: 5px;
+		list-style-type: none;
+		display: inline-block; 
+	}
+
+	#rightheader li {
+		display: inline;
+		margin-left: 2px;
+	}
+
+	#rightheader ul li:after{
+	content: "|";
+	padding: 5px;
+	color: gray;
+	}
+
+	#rightheader ul li:last-child:after {
+		content: none;
+	}
+
+	#rightheader h4 {
+		width: 40px;
+		height: 20px;
+		margin-left: 60px;
+		background-color: #2570aa;
+		color: white;
+		font-weight: lighter;
+		padding: 5px;
+		border-radius: 5px;
+		margin-left: 5px;
+		display: inline-block;
+		vertical-align: top;
+
+	}
+
+
+	#leftheader h1 {
+		background-color: #2570aa;
+		color: white;
+		width: 970px;
+		height: 40px;
+		font-weight: lighter;
+		font-size: 27px;
+		padding: 10px;
+	}
+
+#navbar, #main {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#topsidebar {
+	width: 270px;
+	height: 250px;
+}
+
+	#topsidebar hr {
+		color: gray;
+		width: 190px;
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+	#topsidebar h4 {
+		color: #2570aa;
+		font-weight: lighter;
+		padding: 50px 20px 10px 10px;
+	}
+
+	#topsidebar h5 {
+		color: red;
+		font-size: 12px;
+		font-weight: lighter;
+		padding: 0px 0px 5px 10px;
+	}
+
+	#topsidebar p {
+		font-size: 13px;
+		font-weight: lighter;
+		padding: 0px 0px 10px 10px;
+	}
+
+		#topsidebar p span {
+			color: #2570aa;
+		}
+
+	#topsidebar h3 {
+		background-color: #2570aa;
+		color: white;
+		border-radius: 5px;
+		font-weight: lighter;
+		width: 180px;
+		margin-left: 10px;
+		padding-left: 40px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	#topsidebar h2 {
+		background-color: orange;
+		color: white;
+		font-size: 20px;
+		border-radius: 5px;
+		font-weight: lighter;
+		width: 160px;
+		margin-top: 10px;
+		margin-left: 10px;
+		padding-left: 60px;
+		padding-right: 10px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+
+	}
+
+	#topsidebar h6 {
+		font-weight: lighter;
+		margin-left: 70px;
+		padding-top: 5px;
+	}
+
+
+#bottomsidebar {
+	background-image: url(file:///Users/aganderson/Desktop/Coding%20Dojo%20Files/wordstream/left_content_ad.png);
+	background-repeat: no-repeat;
+	width: 300px;
+	height:300px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+	#bottomsidebar h3 {
+		color: #2570aa;
+		font-size: 15px;
+		padding-right: 130px;
+	}
+
+	#bottomsidebar p {
+		font-size: 12px;
+		font-weight: lighter;
+		padding: 5px 140px 5px 5px;
+	}
+
+	#bottomsidebar h4 {
+		background-color: #2570aa;
+		color: white;
+		font-size: 12px;
+		font-weight: lighter;
+		border-radius: 5px;
+		width: 150px;
+		padding: 5px 5px 5px 20px;
+	}
+
+#main {
+	width: 600px;
+	padding-left: 10px;
+
+}
+
+
+	#topmain h3, #topmain img#house, #topmain img#phone, #contacts{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#topmain {
+		margin-top: 15px;
+		height: 90px;
+		border-bottom: 1px solid silver;
+	}
+
+		#topmain h3{
+			color: #5173B4;
+			font-size: 18px;
+			margin-right: 260px;
+		}
+		
+		#topmain img#phone{
+			margin-right: 5px;
+		}
+
+	#contacts{
+		width: 200px;
+	}
+
+		#contacts p{
+			color: grey;
+			font-weight: lighter;
+			font-size: 13px;
+		}
+		
+		#contacts span{
+			color: #5173B4;
+			font-size: 20px;
+		}
+
+	#bottommain {
+		padding-top: 20px;
+		font-size: 13px;
+		padding-right: 100px;
+	}
+
+	#bottommain h3 {
+		color: #2570aa;
+		padding-bottom: 10px;
+	}
+
+	#bottommain span {
+		font-weight: bolder;
+	}
+
+	#bottommain a {
+		color: blue;
+	}
+
+	#bottommain h3, p, li, h4 {
+		padding: 5px;
+	}
+
+#bottomad {
+	width: 570px;
+	border: 4px solid #5173B4;
+	margin: 20px;
+}
+
+#bottomad img, #adcontent{
+	display: inline-block;
+	vertical-align: top;
+}
+
+	#bottomad img{
+		margin: 5px;
+	}
+	
+#adcontent{
+	width: 480px;
+	height: 140px;
+}
+	#adcontent h3{
+		font-size: 16px;
+	}
+	
+	#adcontent p{
+		margin-bottom: 10px;
+	}
+	
+	#adcontent button{
+		border-radius: 5px;
+		background-color: #92D162;
+		color: white;
+		padding: 2px 18px 2px 18px;
+		border: none;
+		height: 30px;
+	}
+
+
+
+
+
+

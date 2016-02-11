@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="Assignment II" content="jQery Assignment II:The Disappearing Image"/>
+	<title>Disappearging Image</title>
+	<link rel="stylesheet" href="file:///Users/aganderson/Desktop/Coding%20Dojo%20Files/disappearing%20ninja/diappearingninja.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('img').click(function(){
+			$(this).fadeOut('slow');
+		});
+
+		$('button').click(function(){
+			$('img').show('slow');
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="image">
+			
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+			<img src="https-_s-media-cache-ak0.pinimg.com_236x_46_43_ed_4643eda4e1be4273721a76a370b90346.jpg" alt="cat" width="150" height="150">
+
+		</div>
+
+		<div id="button">
+			<button>Restore</button>
+		</div>
+	</div>
+</body>
+</html>

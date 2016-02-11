@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="Hoverin" content="Option jQuery Assignment : Hover In/Out"/>
+	<title></title>
+	<link rel="stylesheet" href=""/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$('img').hover(function(){
+				$(this).attr('src', 'SlothSweater.jpg');
+					}, function(){
+				$(this).attr('src', 'OceanSweater.jpg');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="hovers">
+			 <img src="OceanSweater.jpg" data-alt-src="SlothSweater.jpg" width="150" height="150">
+
+			 <img src="OceanSweater.jpg" data-alt-src="SlothSweater.jpg" width="150" height="150">
+
+			 <img src="OceanSweater.jpg" data-alt-src="SlothSweater.jpg" width="150" height="150">
+
+			 <img src="OceanSweater.jpg" data-alt-src="SlothSweater.jpg" width="150" height="150">
+		</div>
+	</div>
+</body>
+</html>

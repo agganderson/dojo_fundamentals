@@ -1,0 +1,10 @@
+#hovers {
+	margin: 10px;
+	display: inline-block;
+}
+
+#hovers img {
+	width: 100px;
+	height: 150px;
+	margin: 10px;
+}
